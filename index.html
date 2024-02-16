@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header class="w-[1440px] mx-auto">
+
+  </header>
+
+
+  <!--main -->
+  <main class="w-[100%] mx-auto">
+    <!-- shapes container -->
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center">
+
+
+
+      <!-- Triangle   -->
+      <div class="shadow-xl w-[90%] mx-auto">
+        <!-- Triangle Img -->
+        <img src="images/triangle.png" class="w-[90%] mx-auto p-5">
+        <!-- card texts-->
+        <div class="p-5  space-y-2">
+          <h2 class="font-bold text-center">Triangle</h2>
+          <p class="text-center">Area(A) =0.5 X b X h</p>
+          <div class="text-center">
+            <!-- Triangle Base -->
+            <input id="triangle-base" type="number" placeholder="base"
+              class="text-center rounded inline bg-gray-200 w-20 p-2 placeholder:text-black">
+            <p class="inline">cm</p>
+            <!-- Triangle Height -->
+            <input id="triangle-height" type="number" placeholder="height"
+              class="text-center rounded ml-6 inline bg-gray-200 w-20 p-2 placeholder:text-black">
+            <p class="inline">cm</p>
+          </div>
+          <!-- result -->
+          <p class="text-center">Area: <span id="triangle-area-result"></span><span> cm<sup>2</sup></span>
+          </p>
+          <!-- calculate button -->
+          <button onclick="calculateTriangleArea()"
+            class="text-white btn mx-auto w-full bg-[#1090D8]">Calculate</button>
+        </div>
+      </div>
+
+      <!-- Rectangle   -->
+      <div class="shadow-xl w-[90%] mx-auto">
+        <!-- Rectangle Img -->
+        <img src="images/rectangle.png" class="mx-auto p-5">
+        <!-- card texts-->
+        <div class="p-5 mt-4 space-y-2">
+          <h2 class="font-bold text-center">Rectangle</h2>
+          <p class="text-center">Area(A) = W X l</p>
+          <div class="text-center">
+            <!-- Rectangle width -->
+            <input id="rectangle-width" type="number" placeholder="width"
+              class="text-center rounded inline bg-gray-200 w-20 p-2 placeholder:text-black">
+            <p class="inline">cm</p>
+            <!-- Rectangle length -->
+            <input id="rectangle-length" type="number" placeholder="length"
+              class="text-center rounded ml-6 inline bg-gray-200 w-20 p-2 placeholder:text-black">
+            <p class="inline">cm</p>
+          </div>
+          <!-- result -->
+          <p class="text-center">Area: <span id="rectangle-area-result"></span><span> cm<sup>2</sup></span>
+          </p>
+          <!-- calculate button -->
+          <button onclick="calculateRectangleArea()"
+            class="text-white btn mx-auto w-full bg-[#1090D8]">Calculate</button>
+        </div>
+      </div>
+      
+
+
+
+
+    </div>
+
+  </main>
+
+
+  <!-- footer -->
+  <footer>
+
+  </footer>
+  <!-- scripts -->
+  <script src="calculate.js"></script>
+</body>
+
+</html>
